@@ -3,7 +3,7 @@ import { stats, pressLogos } from "@/lib/site";
 
 export default function Stats() {
   return (
-    <section data-nav="dark" className="bg-bark px-6 py-16 md:px-10 md:py-24">
+    <section data-nav="dark" className="bg-bark px-6 py-12 md:px-10 md:py-16">
       <div className="mx-auto max-w-shell">
         <div className="grid gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((s, i) => (

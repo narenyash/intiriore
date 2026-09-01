@@ -104,7 +104,7 @@ export default function UGCVideos() {
     <section
       id="stories"
       data-nav="dark"
-      className="bg-black-warm px-6 py-20 md:px-10 md:py-28"
+      className="bg-black-warm px-6 py-14 md:px-10 md:py-20"
     >
       <div className="mx-auto max-w-shell">
         <Reveal className="flex flex-wrap items-end justify-between gap-6">
@@ -121,7 +121,7 @@ export default function UGCVideos() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-4 md:mt-16 md:grid-cols-2">
+        <div className="mt-10 grid gap-4 md:mt-12 md:grid-cols-2">
           {ugcVideos.map((v) => (
             <Reveal key={v.handle} delay={0.04}>
               <VideoCard {...v} />

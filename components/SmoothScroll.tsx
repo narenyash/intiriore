@@ -56,10 +56,10 @@ export default function SmoothScroll({
       options={{
         autoRaf: false,
         // lerp 1 == effectively no smoothing for reduced-motion users
-        lerp: reduced ? 1 : 0.1,
+        lerp: reduced ? 1 : 0.13,
         smoothWheel: !reduced,
-        wheelMultiplier: 1,
-        touchMultiplier: 1.5,
+        wheelMultiplier: 1.15,
+        touchMultiplier: 1.6,
         anchors: { offset: -64 },
       }}
     >

@@ -1,12 +1,12 @@
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
-import Testimonials from "@/components/Testimonials";
-import UGCVideos from "@/components/UGCVideos";
-import Services from "@/components/Services";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import BeforeAfter from "@/components/BeforeAfter";
+import Services from "@/components/Services";
 import WorkGrid from "@/components/WorkGrid";
 import Process from "@/components/Process";
+import Testimonials from "@/components/Testimonials";
+import UGCVideos from "@/components/UGCVideos";
 import Philosophy from "@/components/Philosophy";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
@@ -17,11 +17,11 @@ export default function Home() {
     <main>
       <Hero />
       <Stats />
-      <Testimonials />
-      <UGCVideos />
-      <Services />
       <ProjectShowcase />
       <BeforeAfter />
+      <UGCVideos />
+      <Testimonials />
+      <Services />
       <WorkGrid />
       <Process />
       <Philosophy />

@@ -4,7 +4,7 @@ import { Reveal, Label } from "@/components/ui";
 export default function Philosophy() {
   return (
     <section id="studio" data-nav="dark" className="relative bg-black-warm">
-      <div className="relative h-[52vh] min-h-[340px] overflow-hidden">
+      <div className="relative h-[42vh] min-h-[300px] overflow-hidden">
         <Image
           src="/photos/entryway.avif"
           alt="A plaster entry hall with a black steel pivot door opening onto dry golden hills at dusk"
@@ -15,7 +15,7 @@ export default function Philosophy() {
         <div className="absolute inset-0 bg-black-warm/35" />
       </div>
 
-      <div className="mx-auto max-w-shell px-6 py-20 md:px-10 md:py-28">
+      <div className="mx-auto max-w-shell px-6 py-14 md:px-10 md:py-20">
         <Reveal className="max-w-3xl">
           <Label className="text-cream/45">The studio</Label>
           <p className="mt-8 font-serif text-[clamp(1.6rem,3.4vw,2.6rem)] font-light leading-[1.35] text-cream/90">
@@ -26,7 +26,7 @@ export default function Philosophy() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-x-12 gap-y-10 border-t border-cream/15 pt-12 md:grid-cols-3">
+        <div className="mt-10 grid gap-x-12 gap-y-8 border-t border-cream/15 pt-10 md:grid-cols-3">
           {[
             [
               "Founded",

@@ -5,7 +5,7 @@ export default function Testimonials() {
   return (
     <section
       data-nav="light"
-      className="bg-linen px-6 py-20 md:px-10 md:py-28"
+      className="bg-linen px-6 py-14 md:px-10 md:py-20"
     >
       <div className="mx-auto max-w-shell">
         <Reveal>
@@ -15,7 +15,7 @@ export default function Testimonials() {
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-x-10 gap-y-12 md:mt-16 md:grid-cols-2">
+        <div className="mt-10 grid gap-x-10 gap-y-10 md:mt-12 md:grid-cols-2">
           {testimonials.map((t, i) => (
             <Reveal
               key={t.name}

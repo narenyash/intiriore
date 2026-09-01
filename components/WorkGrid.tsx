@@ -4,7 +4,7 @@ import { workGrid } from "@/lib/site";
 
 export default function WorkGrid() {
   return (
-    <section data-nav="light" className="bg-plaster px-6 py-20 md:px-10 md:py-28">
+    <section data-nav="light" className="bg-plaster px-6 py-14 md:px-10 md:py-20">
       <div className="mx-auto max-w-shell">
         <Reveal className="flex items-end justify-between gap-6">
           <div>
@@ -21,7 +21,7 @@ export default function WorkGrid() {
           </a>
         </Reveal>
 
-        <div className="mt-12 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           {workGrid.map((p, i) => (
             <Reveal key={p.slug} delay={(i % 3) * 0.06} className="group">
               <div className="relative aspect-[4/3] overflow-hidden bg-sand">

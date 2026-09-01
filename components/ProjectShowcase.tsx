@@ -39,7 +39,7 @@ export default function ProjectShowcase() {
 
   return (
     <div ref={rootRef} id="work" data-nav="dark" className="bg-black-warm">
-      <Reveal className="px-6 pt-20 md:px-10 md:pt-28">
+      <Reveal className="px-6 pt-16 md:px-10 md:pt-20">
         <div className="mx-auto max-w-shell">
           <Label className="text-cream/45">Selected work</Label>
           <h2 className="mt-4 max-w-xl font-serif text-[clamp(1.9rem,4vw,3.2rem)] font-light leading-[1.08] text-cream">
@@ -52,7 +52,7 @@ export default function ProjectShowcase() {
         <section
           key={p.slug}
           data-panel
-          className="relative mt-12 flex h-[86vh] items-end overflow-hidden md:mt-16"
+          className="relative mt-6 flex h-[70vh] items-end overflow-hidden md:mt-8"
         >
           <div data-img className="absolute inset-[-12%] will-change-transform">
             <Image

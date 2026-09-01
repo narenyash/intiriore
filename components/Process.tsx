@@ -21,7 +21,7 @@ export default function Process() {
     <section
       id="process"
       data-nav="light"
-      className="relative bg-cream px-6 py-20 md:px-10 md:py-28"
+      className="relative bg-cream px-6 py-14 md:px-10 md:py-20"
     >
       <div className="mx-auto max-w-shell">
         <Reveal className="max-w-2xl">
@@ -35,7 +35,11 @@ export default function Process() {
           </p>
         </Reveal>
 
-        <ol ref={railRef} className="relative mt-16 md:mt-24">
+        <ol
+          ref={railRef}
+          style={{ position: "relative" }}
+          className="mt-12 md:mt-16"
+        >
           {/* rail */}
           <span
             aria-hidden
@@ -50,7 +54,7 @@ export default function Process() {
           {processSteps.map((step, i) => (
             <li
               key={step.no}
-              className="relative grid gap-x-12 gap-y-2 border-t border-ink/10 py-10 pl-10 first:border-t-0 md:grid-cols-[minmax(0,1fr)_minmax(0,1.7fr)] md:py-14 md:pl-16"
+              className="relative grid gap-x-12 gap-y-2 border-t border-ink/10 py-7 pl-10 first:border-t-0 md:grid-cols-[minmax(0,1fr)_minmax(0,1.7fr)] md:py-9 md:pl-16"
             >
               {/* node */}
               <motion.span
@@ -59,17 +63,17 @@ export default function Process() {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true, margin: "0px 0px -20% 0px" }}
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-                className="absolute left-0 top-[calc(2.5rem+2px)] flex h-[13px] w-[13px] items-center justify-center rounded-full border border-ink/25 bg-cream md:top-[calc(3.5rem+2px)]"
+                className="absolute left-0 top-[calc(1.75rem+6px)] flex h-[13px] w-[13px] items-center justify-center rounded-full border border-ink/25 bg-cream md:top-[calc(2.25rem+8px)]"
               >
                 <span className="h-[5px] w-[5px] rounded-full bg-oak" />
               </motion.span>
 
               <Reveal delay={i * 0.04}>
-                <p className="font-serif text-[clamp(2.75rem,6vw,4.5rem)] font-light leading-none text-ink/15">
+                <p className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] font-light leading-none text-ink/15">
                   {step.no}
                 </p>
-                <Label className="mt-4 text-oak-deep">{step.when}</Label>
-                <h3 className="mt-2 font-serif text-[clamp(1.35rem,2.2vw,1.75rem)] font-light text-ink">
+                <Label className="mt-3 text-oak-deep">{step.when}</Label>
+                <h3 className="mt-1.5 font-serif text-[clamp(1.25rem,2vw,1.6rem)] font-light text-ink">
                   {step.title}
                 </h3>
               </Reveal>

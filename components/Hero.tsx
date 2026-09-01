@@ -67,7 +67,7 @@ export default function Hero() {
       ref={trackRef}
       id="top"
       data-nav="dark"
-      className="relative h-[175vh] bg-black-warm"
+      className="relative h-[116vh] bg-black-warm"
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-black-warm">
         {/* Layer 1 — the reveal photo */}

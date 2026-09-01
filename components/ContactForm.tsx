@@ -22,7 +22,7 @@ export default function ContactForm() {
     <section
       id="contact"
       data-nav="dark"
-      className="bg-black-warm px-6 py-20 md:px-10 md:py-28"
+      className="bg-black-warm px-6 py-14 md:px-10 md:py-20"
     >
       <div className="mx-auto grid max-w-shell gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
         <Reveal>

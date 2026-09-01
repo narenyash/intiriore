@@ -56,9 +56,9 @@ export default function BeforeAfter() {
       className="relative bg-black-warm"
     >
       {/* scroll track — the sticky child holds while --reveal scrubs */}
-      <div ref={trackRef} className="relative h-[180vh]">
+      <div ref={trackRef} className="relative h-[118vh]">
         <div className="sticky top-0 flex h-screen flex-col">
-          <div className="flex items-end justify-between px-6 pb-5 pt-24 md:px-10 md:pt-28">
+          <div className="flex items-end justify-between px-6 pb-5 pt-20 md:px-10 md:pt-24">
             <div>
               <Label className="text-cream/50">Before &amp; After</Label>
               <h2 className="mt-3 font-serif text-[clamp(1.75rem,3.4vw,2.9rem)] font-light text-cream">
@@ -118,7 +118,7 @@ export default function BeforeAfter() {
 
       {/* extra pairs — drag to compare */}
       {more.length > 0 && (
-        <div className="px-6 pb-28 md:px-10 md:pb-36">
+        <div className="px-6 pb-20 pt-4 md:px-10 md:pb-24">
           <Reveal className="mx-auto max-w-shell">
             <p className="text-[12px] text-cream/45">
               Drag to compare — more transformations
